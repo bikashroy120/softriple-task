@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactStars from "react-rating-stars-component";
+import StarRatings from 'react-star-ratings';
 import {BsBagPlusFill} from "react-icons/bs"
 
 const Product = ({item}) => {
@@ -13,12 +13,12 @@ const Product = ({item}) => {
             <h2 className='py-2 text-[16px] font-semibold'>{item.title}</h2>
             <h2 className='text-red-600 text-[20px] font-semibold'>${item.price}</h2>
             <div className='flex items-center justify-between'>
-                <ReactStars
-                    count={5}
-                    size={24}
-                    value={Number(item.reating)}
-                    edit={false}
-                    activeColor="#ffd700"
+                <StarRatings
+                rating={Number(item.reating)}
+                starRatedColor="blue"
+                isSelectable={false}
+                numberOfStars={5}
+                name='rating'
                 />
                 <button className=' py-2 px-2 text-[20px] font-bold text-green-700 border-2 hover:bg-green-500 hover:text-white rounded-md border-green-500 transition-all duration-300'><BsBagPlusFill /></button>
             </div>

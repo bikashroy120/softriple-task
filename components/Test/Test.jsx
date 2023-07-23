@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useState } from 'react'
-import ReactStars from "react-rating-stars-component";
+import StarRatings from 'react-star-ratings';
 
 
 const Test = ({data}) => {
@@ -17,12 +17,13 @@ const Test = ({data}) => {
         <div className=' border-t border-b py-4'>
             <h2 className=' text-[21px] font-semibold'>Price :<span className=' text-red-500'> ${data.price}</span></h2>
             <div className=' flex items-center gap-2'>
-              <ReactStars
-                      count={5}
-                      size={24}
-                      value={Number(4)}
-                      edit={false}
-                      activeColor="#ffd700"
+
+                <StarRatings
+                rating={Number(4)}
+                starRatedColor="blue"
+                isSelectable={false}
+                numberOfStars={5}
+                name='rating'
                 />
                 <span>({data.reviews.length} Reviews)</span>
             </div>
