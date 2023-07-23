@@ -34,8 +34,8 @@
   }
   
   .swiper-slide {
-    background-size: cover;
-    background-position: center;
+    background-size: cover !important;
+    background-position: center !important;
   }
   
   .mySwiper2 {
@@ -46,6 +46,12 @@
   }
   
   .mySwiper2 img{
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+  }
+
+  .mySwiper2 .swiper-slide{
     width: 100% !important;
     height: 100% !important;
   }
@@ -72,22 +78,8 @@
     display: block;
     width: 100% !important;
     height: 100% !important;
-    object-fit: cover;
+    object-fit: cover !important;
     border-radius: 20px !important;
-  }
-
-
-  .heeeee{
-    width: 600px !important;
-    height: 600px !important;
-    background-color: red;
-  }
-  
-
-  .hhhhh{
-    width: 1000px !important;
-    height: 1000px !important;
-    object-fit: cover;
   }
 
 

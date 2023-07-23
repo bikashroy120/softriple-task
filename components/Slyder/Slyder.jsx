@@ -4,7 +4,7 @@ import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 // import ReactImageMagnify from 'react-image-magnify';
-import ReactImageZoom from 'react-image-zoom';
+
 
 // Import Swiper styles
 import 'swiper/css';
@@ -15,6 +15,7 @@ import 'swiper/css/thumbs';
 
 // import required modules
 import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
+import ImageZoomer from './ImageZoomer';
 
 export default function Slyder({image}) {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -37,34 +38,7 @@ export default function Slyder({image}) {
         {
           image.map((item,i)=>(
             <SwiperSlide key={i} style={{width:"100%",height:"100%"}}>
-               
-                {/* <ReactImageMagnify {...{
-                    smallImage: {
-                        alt: 'Wristwatch by Ted Baker London',
-                        isFluidWidth: true,
-                        src: item,
-                        // sizes: '(max-width: 480px) 100vw, (max-width: 1200px) 30vw, 360px'
-                    },
-                    largeImage: {
-                        src: item,
-                        width: 550,
-                        height: 600,
-                    },
-                    enlargedImagePosition:'over',
-                    imageClassName:"hhhhh",
-                    enlargedImageContainerClassName:"heeeee",
-                    enlargedImageContainerStyle: {
-                      zIndex: "1000",
-                    },
-                    enlargedImageContainerDimensions: {
-                      width: "100%",
-                      height: "100%",
-                    },
-                    lensStyle: { backgroundColor: 'rgba(0,0,0,.6)' }
-                }} /> */}
-               
-                <ReactImageZoom zoomPosition={"original"}  width={450} height={450} zoomWidth={450} img={item} />
-            {/* <img src={item} /> */}
+                <ImageZoomer img={item}/>
           </SwiperSlide>
           ))
         }

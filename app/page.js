@@ -11,7 +11,7 @@ export default function Home() {
     category:  ["Men", "Women", "Baby"],
     colors: ["Red", "Blue", "Green"],
     sizes: ["Small", "Medium", "Large"],
-    image:["image/1.webp","image/2.webp","image/3.webp","image/4.webp","image/5.webp"],
+    image:["image/1.webp","image/2.webp","image/3.webp","image/4.webp","image/2.webp"],
     reviews: [
       {
         username: "User1",

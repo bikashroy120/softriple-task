@@ -12,13 +12,16 @@ const Product = ({item}) => {
             <h3 className=' text-red-500'>Shirt</h3>
             <h2 className='py-2 text-[16px] font-semibold'>{item.title}</h2>
             <h2 className='text-red-600 text-[20px] font-semibold'>${item.price}</h2>
-            <div className='flex items-center justify-between'>
+            <div className='flex items-center justify-between text-[18px]'>
                 <StarRatings
                 rating={Number(item.reating)}
-                starRatedColor="blue"
                 isSelectable={false}
                 numberOfStars={5}
+                starDimension={"20px"}
+                starSpacing={"3px"}
+                starRatedColor="#ffd700"
                 name='rating'
+                
                 />
                 <button className=' py-2 px-2 text-[20px] font-bold text-green-700 border-2 hover:bg-green-500 hover:text-white rounded-md border-green-500 transition-all duration-300'><BsBagPlusFill /></button>
             </div>

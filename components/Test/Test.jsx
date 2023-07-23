@@ -20,7 +20,9 @@ const Test = ({data}) => {
 
                 <StarRatings
                 rating={Number(4)}
-                starRatedColor="blue"
+                starDimension={"20px"}
+                starSpacing={"3px"}
+                starRatedColor="#ffd700"
                 isSelectable={false}
                 numberOfStars={5}
                 name='rating'
