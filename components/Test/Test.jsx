@@ -20,7 +20,7 @@ const Test = ({data}) => {
               <ReactStars
                       count={5}
                       size={24}
-                      value={data.totalrating}
+                      value={Number(4)}
                       edit={false}
                       activeColor="#ffd700"
                 />

@@ -3,7 +3,7 @@
 import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import ReactImageMagnify from 'react-image-magnify';
+// import ReactImageMagnify from 'react-image-magnify';
 import ReactImageZoom from 'react-image-zoom';
 
 // Import Swiper styles
@@ -38,7 +38,7 @@ export default function Slyder({image}) {
           image.map((item,i)=>(
             <SwiperSlide key={i} style={{width:"100%",height:"100%"}}>
                
-                <ReactImageMagnify {...{
+                {/* <ReactImageMagnify {...{
                     smallImage: {
                         alt: 'Wristwatch by Ted Baker London',
                         isFluidWidth: true,
@@ -61,8 +61,10 @@ export default function Slyder({image}) {
                       height: "100%",
                     },
                     lensStyle: { backgroundColor: 'rgba(0,0,0,.6)' }
-                }} />
+                }} /> */}
                
+                <ReactImageZoom zoomPosition={"original"}  width={450} height={450} zoomWidth={450} img={item} />
+            {/* <img src={item} /> */}
           </SwiperSlide>
           ))
         }

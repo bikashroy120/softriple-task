@@ -7,7 +7,7 @@ export default function Home() {
     name:"New Long Sleeve Casual Shirt for Men",
     description:"",
     price:399,
-    totalrating:"4",
+    totalrating:4,
     category:  ["Men", "Women", "Baby"],
     colors: ["Red", "Blue", "Green"],
     sizes: ["Small", "Medium", "Large"],
@@ -36,13 +36,13 @@ export default function Home() {
   const product = [
     {
       title:"Full-Sleeved Navy Tartan Shirt for men",
-      reating:"4",
+      reating:4,
       price:200,
       image:"image/3.webp"
     },
     {
       title:"Full-Sleeved Navy Tartan Shirt for men",
-      reating:"3",
+      reating:3,
       price:180,
       image:"image/1.webp"
     },
@@ -54,13 +54,13 @@ export default function Home() {
     },
     {
       title:"Full-Sleeved Navy Tartan Shirt for men",
-      reating:"2",
+      reating:2,
       price:230,
       image:"image/7.webp"
     },
     {
       title:"Full-Sleeved Navy Tartan Shirt for men",
-      reating:"4",
+      reating:4,
       price:200,
       image:"image/8.webp"
     },

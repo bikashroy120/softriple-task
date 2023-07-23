@@ -46,7 +46,7 @@ const DetailsTop = ({data,product}) => {
     <div className=' mt-12 flex items-center flex-wrap sm:px-0 px-5 gap-3'>
         {
           filterData.map((item,i)=>(
-            <button onClick={()=>setActive(item.id)} className={`py-2 px-4 border rounded-2xl font-semibold duration-300 transition-all ${item.id === active ? " shadow-xl text-green-500 border-green-500" : "border-gray-300"}`}>{item.title}</button>
+            <button key={i} onClick={()=>setActive(item.id)} className={`py-2 px-4 border rounded-2xl font-semibold duration-300 transition-all ${item.id === active ? " shadow-xl text-green-500 border-green-500" : "border-gray-300"}`}>{item.title}</button>
           ))
         }
     </div>

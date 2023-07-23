@@ -11,7 +11,7 @@ const Reviews = ({data}) => {
             <ReactStars
                 count={5}
                 size={24}
-                value={data.totalrating}
+                value={Number(data.totalrating)}
                 edit={false}
                 activeColor="#ffd700"
             />
@@ -25,7 +25,7 @@ const Reviews = ({data}) => {
             <ReactStars
                 count={5}
                 size={30}
-                value={4}
+                value={Number(4)}
                 edit={true}
                 activeColor="#ffd700"
             />
@@ -53,7 +53,7 @@ const Reviews = ({data}) => {
                             <ReactStars
                                 count={5}
                                 size={24}
-                                value={data.totalrating}
+                                value={Number(data.totalrating)}
                                 edit={false}
                                 activeColor="#ffd700"
                             />

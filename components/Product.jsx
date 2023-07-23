@@ -16,7 +16,7 @@ const Product = ({item}) => {
                 <ReactStars
                     count={5}
                     size={24}
-                    value={item.reating}
+                    value={Number(item.reating)}
                     edit={false}
                     activeColor="#ffd700"
                 />
